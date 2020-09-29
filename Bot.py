@@ -3,7 +3,6 @@ from pybricks.ev3devices import (Motor, ColorSensor, UltrasonicSensor, GyroSenso
 from pybricks.parameters import Port, Stop, Direction, Button, Color
 from pybricks.tools import wait, StopWatch
 from pybricks.robotics import DriveBase
-import time
 
 class BroBot():
     def __init__(self):
