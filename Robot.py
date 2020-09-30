@@ -11,9 +11,14 @@ class Robot():
         self.ev3 = EV3Brick()
         self.RED, self.GREEN, self.BLUE = 50, 50, 50
 
+    def print_to_screen(self, text):
+        char[] ch = new char[text.length]
+        
+
     def calibrate(self):
         self.ev3.screen.print("COLOR CALIBRATION:\nL-SENSOR: WHITE\nR-SENSOR: BLACK\nPUSH A BUTTON\nTO CONTINUE")
         self.wait_for_button()
+        self.ev3.screen.clear()
 
         RED_ON_WHITE, GREEN_ON_WHITE, BLUE_ON_WHITE = self.left_color_sensor.rgb()
         RED_ON_BLACK, GREEN_ON_BLACK, BLUE_ON_BLACK = self.right_color_sensor.rgb()
