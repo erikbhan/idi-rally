@@ -9,11 +9,7 @@ class Robot():
         self.brobot = DriveBase(left_motor=Motor(Port.B), right_motor=Motor(Port.C), wheel_diameter=55, axle_track=127)
         self.left_color_sensor, self.right_color_sensor = ColorSensor(Port.S4), ColorSensor(Port.S2)
         self.ev3 = EV3Brick()
-        self.RED, self.GREEN, self.BLUE = 50, 50, 50
-
-    def print_to_screen(self, text):
-        char[] ch = new char[text.length]
-        
+        self.RED, self.GREEN, self.BLUE = 50, 50, 50   
 
     def calibrate(self):
         self.ev3.screen.print("COLOR CALIBRATION:\nL-SENSOR: WHITE\nR-SENSOR: BLACK\nPUSH A BUTTON\nTO CONTINUE")
