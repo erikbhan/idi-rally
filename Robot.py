@@ -4,7 +4,7 @@ from pybricks.parameters import Port, Stop, Direction, Button, Color
 from pybricks.tools import wait, StopWatch
 from pybricks.robotics import DriveBase
 
-class BroBot():
+class Robot():
     def __init__(self):
         self.brobot = DriveBase(left_motor=Motor(Port.B), right_motor=Motor(Port.C), wheel_diameter=55, axle_track=127)
         self.left_color_sensor, self.right_color_sensor = ColorSensor(Port.S4), ColorSensor(Port.S2)

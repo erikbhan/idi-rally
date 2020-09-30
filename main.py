@@ -1,7 +1,7 @@
 #!/usr/bin/env pybricks-micropython
-from Bot import Bot
+from Robot import Robot
 
-robot = Bot()
+robot = Robot()
 
 robot.calibrate()
 robot.wait_for_button()
